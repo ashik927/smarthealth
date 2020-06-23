@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>search diases.</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="description" content="Elephant is an admin template that helps you build modern Admin Applications, professionally fast! Built on top of Bootstrap, it includes a large collection of HTML, CSS and JS components that are simple to use and easy to customize.">
+    <meta property="og:url" content="http://demo.madebytilde.com/elephant">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The fastest way to build Modern Admin APPS for any platform, browser, or device.">
+    <meta property="og:description" content="Elephant is an admin template that helps you build modern Admin Applications, professionally fast! Built on top of Bootstrap, it includes a large collection of HTML, CSS and JS components that are simple to use and easy to customize.">
+    <meta property="og:image" content="http://demo.madebytilde.com/elephant.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@madebytilde">
+    <meta name="twitter:creator" content="@madebytilde">
+    <meta name="twitter:title" content="The fastest way to build Modern Admin APPS for any platform, browser, or device.">
+    <meta name="twitter:description" content="Elephant is an admin template that helps you build modern Admin Applications, professionally fast! Built on top of Bootstrap, it includes a large collection of HTML, CSS and JS components that are simple to use and easy to customize.">
+    <meta name="twitter:image" content="http://demo.madebytilde.com/elephant.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#f1595d">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/elephant.min.css">
+    <link rel="stylesheet" href="css/landing-page.min.css">
+  </head>
+  <body class="spinner spinner-primary spinner-lg">
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <center><h4>Patient</h4></center>
+          </a>
+        </div>
+        <nav id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="myprofile.html">My Profile </a></li>
+            <li><a href="searchdiesese.html">Search Disease</a></li>
+            <li><a href="searchdoctor.html">Search Doctor</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div style="margin-top: 100px;">
+      <div class="row">
+         <div id="qs1">
+                  <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                      <h4 class="text-center m-y-md">
+                        <span><b>Please Enter Your Symptom</b></span>
+                        
+                      </h4>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <form class="btn btn-success">
+                                        <input type="text" value="Enter your symptoms" class="form-control" style="width:300px"></input>
+                                </form>
+                                <br>
+                                <br>
+
+                                <div class="form-group">
+                                    <button id="btn1" class="btn btn-info" type="button" style="width:120px;">Next</button>
+                                </div>
+                            </center>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                </div>  
+                
+                <div id="qs2" style="display:none">    
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                      aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                        20% Complete (success)
+                      </div>
+                    </div>
+                  <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                      <h4 class="text-center m-y-md">
+                        <span>Are you experienceing any symptoms?</span>
+                      </h4>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <div class="form-group">
+                                    <label class="radio-inline"><input type="radio" name="businessname" checked>fever</label>
+                                    <label class="radio-inline"><input type="radio" name="businessname">cold</label>
+                                    <label class="radio-inline"><input type="radio" name="businessname">runny noise</label>
+                                    <br>
+                                    <br>
+                                    <form>
+                                        <input type="text" value="enter your any other symtomps" class="form-control" style="width:300px"></input>
+                                    </form>
+                                </div>
+                                <div class="form-group">
+                                    <button id="btn2" class="btn btn-default" type="button" style="width:120px;">Next</button>
+                                </div>
+                            </center>
+                        </div>
+                      </div>
+                     </div>
+                    </div>
+                </div>
+                
+                <div id="qs3" style="display:none">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                      aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                        30% Complete (success)
+                      </div>
+                    </div>
+                  <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <div class="form-group">
+                                    <label class="radio-inline"><input type="radio" name="registeredbusiness" checked>Helpful</label>
+                                    <label class="radio-inline"><input type="radio" name="registeredbusiness">OR NOT</label>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <button id="btn3" class="btn btn-default" type="button" style="width:120px;">Submit</button>
+                                </div>
+                            </center>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             <!--   <div id="qs3" style="display:none">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                      aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                        30% Complete (success)
+                      </div>
+                    </div>
+                  <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                      <h4 class="text-center m-y-md">
+                        <span>Have you have registered your business?</span>
+                        <p><small>We just have a few questions to help us build your profile!</small></p>
+                      </h4>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <div class="form-group">
+                                    <label class="radio-inline"><input type="radio" name="registeredbusiness" checked>yes</label>
+                                    <label class="radio-inline"><input type="radio" name="registeredbusiness">No, add to list</label>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <button id="btn3" class="btn btn-default" type="button" style="width:120px;">Next</button>
+                                </div>
+                            </center>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div id="qs4" style="display:none">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                        40% Complete (success)
+                      </div>
+                    </div>
+                  <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                      <h4 class="text-center m-y-md">
+                        <span>Do you have a Federal Tax ID?</span>
+                        <p><small>We just have a few questions to help us build your profile!</small></p>
+                      </h4>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <div class="form-group">
+                                    <label class="radio-inline"><input type="radio" name="federaltaxid" checked>yes</label>
+                                    
+                                    <label class="radio-inline"><input type="radio" name="federaltaxid">No,  add to list</label>
+                                </div>
+                                <div class="form-group">
+                                    <button id="btn4" class="btn btn-default" type="button" style="width:120px;">Next</button>
+                                </div>
+                            </center>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                </div>
+                
+                <div id="qs5" style="display:none">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                      aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        50% Complete (success)
+                      </div>
+                    </div>
+                  <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                      <h4 class="text-center m-y-md">
+                        <span>Do you have a State Tax ID?</span>
+                        <p><small>We just have a few questions to help us build your profile!</small></p>
+                      </h4>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <div class="form-group">
+                                     <label class="radio-inline"><input type="radio" name=""statetaxid"" checked>yes</label>
+                                    
+                                    <label class="radio-inline"><input type="radio" name=""statetaxid"">No,  add to list</label>
+                                </div>
+                                <div class="form-group">
+                                    <button id="btn5"  class="btn btn-default" type="button" style="width:120px;">Next</button>
+                                </div>
+                            </center>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+                     
+                <div id="qs6" style="display:none">    
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        60% Complete (success)
+                      </div>
+                    </div>
+                  <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                      <h4 class="text-center m-y-md">
+                        <span>Do you have need a permit or  license to operate?</span>
+                        <p><small>We just have a few questions to help us build your profile!</small></p>
+                      </h4>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <div class="form-group">
+                                     <label class="radio-inline"><input type="radio" name="needpermit" checked>yes, Which i have</label>
+                                    
+                                    <label class="radio-inline"><input type="radio" name="needpermit">yse, but i do not have it yet,add to list</label>
+                                    <label class="radio-inline"><input type="radio" name="needpermit" checked>No</label>
+                                </div>
+                                <div class="form-group">
+                                    <button id="btn6" class="btn btn-default" type="button" style="width:120px;">Next</button>
+                                </div>
+                            </center>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                </div>
+                    
+                <div id="qs7" style="display:none">  
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                      aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                        70% Complete (success)
+                      </div>
+                    </div>
+                  <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                      <h4 class="text-center m-y-md">
+                        <span>Do you have a business bank account??</span>
+                        <p><small>We just have a few questions to help us build your profile!</small></p>
+                      </h4>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <div class="form-group">
+                                     <label class="radio-inline"><input type="radio" name="businessbankaccount" checked>yes</label>
+                                    
+                                    
+                                    <label class="radio-inline"><input type="radio" name="businessbankaccount" checked>No, add to list</label>
+                                </div>
+                                <div class="form-group">
+                                    <button id="btn7" class="btn btn-default" type="button" style="width:120px;">Next</button>
+                                </div>
+                            </center>
+                        </div>
+                      </div>
+                    </div>
+                   </div> 
+                </div>
+                
+                <div id="qs8" style="display:none">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                      aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        80% Complete (success)
+                      </div>
+                    </div>
+                  <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                      <h4 class="text-center m-y-md">
+                        <span>Is your business trademarked??</span>
+                        <p><small>We just have a few questions to help us build your profile!</small></p>
+                      </h4>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <div class="form-group">
+                              
+                                </div>
+                                <div class="form-group">
+                                    <button id="btn8" class="btn btn-default" type="button" style="width:120px;">Almost there</button>
+                                </div>
+                            </center>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                </div>
+                
+                <div id="qs9" style="display:none">
+                     <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                      aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                        90% Complete (success)
+                      </div>
+                    </div>
+                  <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                      <h4 class="text-center m-y-md">
+                        <span>Do you have any Social Media accounts set up for your business?</span>
+                        <p><small>We just have a few questions to help us build your profile!</small></p>
+                      </h4>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <div class="form-group">
+                                    <label class="radio-inline"><input type="radio" name="socialmediaaccounts" checked>Facebook</label>
+                                    <label class="radio-inline"><input type="radio" name="socialmediaaccounts">Instagram</label>
+                                    <label class="radio-inline"><input type="radio" name="socialmediaaccounts">Twitter</label>
+                                    <label class="radio-inline"><input type="radio" name="socialmediaaccounts">YouTube</label>
+                                    <label class="radio-inline"><input type="radio" name="socialmediaaccounts">snapchat</label>
+                                    <label class="radio-inline"><input type="radio" name="socialmediaaccounts">Pintrest</label>
+                                </div>
+                                
+                            </center>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                      <h4 class="text-center m-y-md">
+                        <span>Do you have any Social Media accounts set up for your business?</span>
+                        
+                      </h4>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <center>
+                                <div class="form-group">
+                                    <label class="radio-inline"><input type="radio" name="optradio" checked>Facebook</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">Instagram</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">Twitter</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">YouTube</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">snapchat</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">Pintrest</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">No, but i want set uptrest</label>
+                                </div>
+                                <div class="form-group">
+                                    <button id="btnsubmit"  class="btn btn-default" type="button" style="width:120px;">Submit</button>
+                                </div>-->
+                            </center>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+          $(document).ready(function(){
+             
+      $("#btn1").click(function(){
+        $("#qs2").show();
+      });
+      
+        $("#btn1").click(function(){
+        $("#qs1").hide();
+      });
+              
+      
+        $("#btn2").click(function(){
+        $("#qs3").show();
+      });
+      
+        $("#btn2").click(function(){
+        $("#qs2").hide();
+      });
+      
+        $("#btn3").click(function(){
+        $("#qs4").show();
+      });
+      
+        $("#btn3").click(function(){
+        $("#qs3").hide();
+      });
+          
+              $("#btn4").click(function(){
+        $("#qs5").show();
+      });
+        
+        $("#btn4").click(function(){
+        $("#qs4").hide();
+      });
+          
+            
+              $("#btn5").click(function(){
+        $("#qs6").show();
+      });
+            
+              
+        $("#btn5").click(function(){
+        $("#qs5").hide();
+      });
+          
+              $("#btn6").click(function(){
+        $("#qs7").show();
+      });
+            
+              
+        $("#btn6").click(function(){
+        $("#qs6").hide();
+      });
+          
+            
+        $("#btn7").click(function(){
+        $("#qs7").hide();
+      });
+          
+              $("#btn7").click(function(){
+        $("#qs8").show();
+      });
+           
+            
+        $("#btn8").click(function(){
+        $("#qs8").hide();
+      });
+          
+              $("#btn8").click(function(){
+        $("#qs9").show();
+      });
+          });
+            
+      </script>
+    
+    <script src="js/vendor.min.js"></script>
+    <script src="js/elephant.min.js"></script>
+    <script src="js/landing-page.min.js"></script>
+   
+  </body>
+</html>
